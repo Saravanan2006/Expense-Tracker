@@ -79,7 +79,7 @@ const app = express()
 app.use(express.json());
 import { v4 as uuidv4 } from 'uuid';
 
-mongoose.connect("mongodb://localhost:27017/expenses").then(() => {
+mongoose.connect("mongodb+srv://saravananm2023cse:Admin@expense-tracker.lzq5p.mongodb.net/?retryWrites=true&w=majority&appName=Expense-tracker").then(() => {
     console.log("Connected to MongoDB");
 });
 
